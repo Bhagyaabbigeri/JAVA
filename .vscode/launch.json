@@ -1,0 +1,107 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "Application",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "Arrays",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "DSA_Application",
+            "request": "launch",
+            "mainClass": "DSA_Application",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "Functions1",
+            "request": "launch",
+            "mainClass": "Functions1",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "Loops",
+            "request": "launch",
+            "mainClass": "Loops",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "Loops(1)",
+            "request": "launch",
+            "mainClass": "Loops.Loops",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "LoopsAdvanced",
+            "request": "launch",
+            "mainClass": "Loops.LoopsAdvanced",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "StarPatternPrinting",
+            "request": "launch",
+            "mainClass": "Loops.StarPatternPrinting",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "Namaste",
+            "request": "launch",
+            "mainClass": "Namaste",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "Recursion",
+            "request": "launch",
+            "mainClass": "Recursion.Recursion",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "RecursionDemo",
+            "request": "launch",
+            "mainClass": "Recursion.RecursionDemo",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "Workshop",
+            "request": "launch",
+            "mainClass": "Workshop",
+            "projectName": "ALGO365_818cfe66"
+        },
+        {
+            "type": "java",
+            "name": "loopsAdvanced",
+            "request": "launch",
+            "mainClass": "loopsAdvanced",
+            "projectName": "ALGO365_818cfe66"
+        }
+    ]
+}

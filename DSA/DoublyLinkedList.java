@@ -145,3 +145,129 @@ public class DoublyLinkedList {
 
        System.out.println("Key is NOT found!");
     }
+
+    public void deleteAtBeginning() {
+        // List is empty
+        if (this.head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        // Single node, list become empty
+        if (this.head.next == null) {
+            this.head = null;
+            return;
+        }
+
+        // Two or more nodes
+        this.head = this.head.next;
+        this.head.prev = null;
+    }
+
+    public void deleteAtEnd() {
+        // List is empty
+        if (this.head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        // Single node, list become empty
+        if (this.head.next == null) {
+            this.head = null;
+            return;
+        }
+
+        // Two or more nodes
+        Dnode lastNode = this.head;
+        while (lastNode.next.next != null) {
+            lastNode = lastNode.next;
+        }
+        lastNode.next = null;
+    }
+
+    public void deleteAtPosition(int targetPosition) {
+        if (targetPosition <= 0) {
+            System.out.println("Invalid position");
+            return;
+        }
+
+        if (this.head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        if (this.head.next == null && targetPosition == 1) {
+            this.head = null;
+            return;
+        }
+
+        int currentPosition = 1;
+        Dnode delNode = this.head;
+
+        while (currentPosition < targetPosition - 1) {
+            currentPosition = currentPosition + 1;
+            delNode = delNode.next;
+
+            if (delNode == null) {
+                System.out.println("Invalid posiiton");
+                return;
+            }
+        }
+
+        if (delNode.next == null) {
+            System.out.println("Can't perform this operation");
+            return;
+        }
+
+        if (delNode.next.next == null) {
+            // DelNode becomes the new last node
+            delNode.next = null;
+            return;
+        }
+
+        delNode.next = delNode.next.next;
+        delNode.next.prev = delNode;
+    }
+
+    public void testInsertOperations() {
+        this.insertAtPosition(100, -1);
+        this.insertAtPosition(4, 1);
+        this.InsertAtBeginning(1);
+        this.InsertAtEnd(10);
+        this.printAllNodes();
+        this.insertAtPosition(2, 2);
+        this.search(10);
+        this.insertAtPosition(50, 100);
+    }
+
+    public void testDeleteOperations() {
+        this.deleteAtBeginning();
+        this.deleteAtEnd();
+        this.deleteAtPosition(-1);
+
+        this.InsertAtBeginning(1);
+        this.deleteAtBeginning();
+
+        this.InsertAtBeginning(1);
+        this.deleteAtEnd();
+
+        this.InsertAtBeginning(1);
+        this.deleteAtPosition(1);
+
+        this.InsertAtBeginning(3);
+        this.InsertAtBeginning(2);
+        this.InsertAtBeginning(1);
+
+        this.deleteAtPosition(3);
+
+        this.InsertAtBeginning(10);
+        this.InsertAtBeginning(20);
+        this.InsertAtBeginning(30);
+        this.InsertAtBeginning(40);
+
+        this.deleteAtPosition(4);
+
+    }
+
+}
+

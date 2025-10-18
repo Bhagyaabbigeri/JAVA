@@ -120,30 +120,26 @@ public class DoublyLinkedList {
 
     }
 
-    public void search(int key)
-    {
-       // List is empty
-       if (this.head == null)
-       {
-           System.out.println("List is empty!");
-           return;
-       }
+    public void search(int key) {
+        // List is empty
+        if (this.head == null) {
+            System.out.println("List is empty!");
+            return;
+        }
 
-       Dnode currentNode = this.head;
-       System.out.println("Nodes in the list are !");
-       while (currentNode != null)
-       {
-           if (key == currentNode.data)
-           {
+        Dnode currentNode = this.head;
+        System.out.println("Nodes in the list are !");
+        while (currentNode != null) {
+            if (key == currentNode.data) {
                 // key is found
                 System.out.println("Key is found");
                 return;
-           }
+            }
 
-           currentNode = currentNode.next;
-       }
+            currentNode = currentNode.next;
+        }
 
-       System.out.println("Key is NOT found!");
+        System.out.println("Key is NOT found!");
     }
 
     public void deleteAtBeginning() {
@@ -270,4 +266,3 @@ public class DoublyLinkedList {
     }
 
 }
-
